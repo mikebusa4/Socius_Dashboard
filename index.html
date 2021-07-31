@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Socius Dashboard</title>
+    <link href="dist/css/ss.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/script.js/2.0.2/script.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.0/chart.min.js"></script> -->
+</head>
+
+<body class="sb-nav-fixed">
+    <nav id = "top-navbar" class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">Socius Dashboard</a>
+        <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i class="fas fa-bars"></i></button>
+    </nav>
+    <div id="layoutSidenav">
+        <div id="layoutSidenav_nav">
+            <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                <div class="sb-sidenav-menu">
+                    <div class="nav">
+                        <div class="sb-sidenav-menu-heading"></div>
+                        <a class="nav-link" href="index.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-stachometer-alt"></i></div>
+                            Main Page
+                        </a>
+                        <div class="sb-sidenav-menu-heading">Data</div>
+                        <!-- <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseLayouts"
+                            aria-expanded="false" aria-controls="collapseLayouts">
+                            <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                            Customers
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                        <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne">
+                            <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link" href="dist/ipv4-settings.html">IP Settings</a>
+                            </nav>
+                        </div>
+                        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseLayouts2"
+                            aria-expanded="false" aria-controls="collapsePages">
+                            <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                            BFTG
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                        <div class="collapse" id="collapseLayouts2" aria-labelledby="headingOne">
+                            <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link" href="dist/bacnet-settings.html">Bacnet Settings</a>
+                            </nav>
+                        </div>
+                        <div class="collapse" id="collapseLayouts2" aria-labelledby="headingOne">
+                            <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link" href="dist/mqtt-settings.html">MQTT Settings</a>
+                            </nav>
+                        </div> -->
+                        <a class="nav-link collapsed" href="dist/html/customers.html"
+                            aria-expanded="false" aria-controls="collapsePages">
+                            <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                            Customers
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                        <a class="nav-link collapsed" href="dist/html/BFTG.html"
+                            aria-expanded="false" aria-controls="collapsePages">
+                            <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                            BFTG
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                        <a class="nav-link collapsed" href="dist/html/workbar_projects.html"
+                            aria-expanded="false" aria-controls="collapsePages">
+                            <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                            Workbar Help Desk Projects
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div id="layoutSidenav_content">
+            <main>
+                <div class="container-fluid">
+                    <h1 class="mt-4">Main Page</h1>
+                    <img src="dist/data/MemLogo_Socius Communications.jpg" alt="Logo" style="width:250px;height:150px;">
+                    <script>
+                        (function() {
+                          // We are resizing for mobile devices only. For other devices, the
+                          // dimensions will be stuck at 800 * 600. To change the default dimensions,
+                          // change the height and width of the canvas and the width of the #container
+                          var win = window,
+                              doc = document,
+                              canvas1 = doc.getElementById('myAreaChart');
+                              canvas2 = doc.getElementById('particleCounts');
+                          if( win.navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry)/i) ) {
+                            canvas1.height = 80;
+                            canvas2.height = 80;
+                          }
+                        })();
+                        </script>
+                </div>
+        </main>
+        <footer class="py-4 bg-light mt-auto">
+            <div class="container-fluid">
+                <div class="d-flex align-items-center justify-content-between small">
+                    <div class="text-muted">Copyright &copy; Socius Communications 2021</div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    </div>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script> -->
+    <!-- <script src="dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script> -->
+    <!-- <script defer src="dist/js/chart.min.js" crossorigin="anonymous"></script> -->
+    <!-- <script defer src="dist/assets/demo/pm_data.js"></script>
+    <script defer src="dist/assets/demo/um_data.js"></script>
+    <script defer src="dist/assets/demo/temp.js"></script>
+    <script defer src="dist/assets/demo/alerts.js"></script> -->
+    <!-- <script src="assets/demo/air-quality-gauge.js"></script> -->
+    <!-- <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script> -->
+    <!-- <script src="assets/demo/datatables-demo.js"></script> -->
+</body>
+
+</html>
